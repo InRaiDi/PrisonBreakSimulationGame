@@ -1822,6 +1822,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 2093475345}
   timeBetweenWaves: 1
   waveCountdownText: {fileID: 954626588}
+  waveNumber: {fileID: 242358771}
   gameManager: {fileID: 196616391}
 --- !u!4 &196616388
 Transform:
@@ -1865,7 +1866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 150
-  startLives: 1
+  startLives: 10
 --- !u!114 &196616391
 MonoBehaviour:
   m_ObjectHideFlags: 0
