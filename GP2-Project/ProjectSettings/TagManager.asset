@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - P2
+  - END
   layers:
   - Default
   - TransparentFX
