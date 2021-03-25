@@ -23,7 +23,7 @@ public class Node : MonoBehaviour {
 	{
 		rend = GetComponent<Renderer>();
 		startColor = rend.material.color;
-
+		
 		buildManager = BuildManager.instance;
     }
 
