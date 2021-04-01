@@ -12,6 +12,11 @@ public class MainMenu : MonoBehaviour {
 		sceneFader.FadeTo(levelToLoad);
 	}
 
+	public void Menu()
+    {
+		sceneFader.FadeTo("MainMenu");
+    }
+
 	public void Instructions()
     {
 		sceneFader.FadeTo("Instructions");
