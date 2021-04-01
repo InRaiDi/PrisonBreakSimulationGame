@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
 	public float speed;
 
 	public float startHealth = 100;
-	private float health;
+	public float health;
 
 	public int worth = 50;
 
@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour {
 	[Header("Unity Stuff")]
 	public Image healthBar;
 
-	private bool isDead = false;
+	public bool isDead = false;
 
 	void Start ()
 	{
@@ -57,4 +57,20 @@ public class Enemy : MonoBehaviour {
 		Destroy(gameObject);
 	}
 
+	void EndPath()
+	{
+		PlayerStats.Lives--;
+		WaveSpawner.EnemiesAlive--;
+		Destroy(gameObject);
+	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        switch (other.tag)
+        {
+			case "END":
+				EndPath();
+				break;
+        }
+    }
 }

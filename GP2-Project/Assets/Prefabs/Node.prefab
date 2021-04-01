@@ -74,7 +74,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6cbe1d03ca437b24587fce5eb347dc90, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217be8ffc06a7cc47ae5ab39c759b026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0.6397059, g: 0.6397059, b: 0.6397059, a: 1}
+  hoverColor: {r: 0.20754719, g: 0.18307228, b: 0.18307228, a: 1}
   notEnoughMoneyColor: {r: 0.9044118, g: 0.17955235, b: 0.17955235, a: 1}
   positionOffset: {x: 0, y: 0.5, z: 0}
   turret: {fileID: 0}
