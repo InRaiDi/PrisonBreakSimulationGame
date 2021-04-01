@@ -20,7 +20,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 	        agent.updateRotation = false;
 	        agent.updatePosition = true;
-            this.target = GameObject.Find("END").transform;
+            this.target = GameObject.FindGameObjectWithTag("END").transform;
         }
 
 
