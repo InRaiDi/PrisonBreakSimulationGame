@@ -7406,7 +7406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499b17d53dc5ad745821cf58aaacc103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 100
+  startMoney: 150
   startLives: 7
 --- !u!114 &914500856
 MonoBehaviour:
@@ -18374,8 +18374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: MainMenu
-  nextLevel: Level02
-  levelToUnlock: 2
+  nextLevel: Level03
+  levelToUnlock: 3
   sceneFader: {fileID: 168940734}
 --- !u!95 &2079790571
 Animator:

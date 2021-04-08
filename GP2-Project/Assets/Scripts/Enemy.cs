@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
@@ -17,11 +19,27 @@ public class Enemy : MonoBehaviour {
 
 	[Header("Unity Stuff")]
 	public Image healthBar;
-
+	public NavMeshAgent navMeshAgent;
 	public bool isDead = false;
 
 	void Start ()
 	{
+		navMeshAgent = this.GetComponent<NavMeshAgent>();
+        switch (SceneManager.GetActiveScene().name)
+        {
+			case "Level01":
+				startHealth = 100;
+				navMeshAgent.speed = 1;
+				break;
+			case "Level02":
+				startHealth = 150;
+				navMeshAgent.speed = 1;
+				break;
+			case "Level03":
+				startHealth = 200;
+				navMeshAgent.speed = 1.5f;
+				break;
+		}
 		speed = startSpeed;
 		health = startHealth;
 	}
