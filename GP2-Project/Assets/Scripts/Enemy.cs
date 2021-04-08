@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour {
 				navMeshAgent.speed = 1;
 				break;
 			case "Level03":
-				startHealth = 200;
+				startHealth = 150;
 				navMeshAgent.speed = 1.5f;
 				break;
 		}
